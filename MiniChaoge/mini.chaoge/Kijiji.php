@@ -4,7 +4,7 @@ class DataConnection {
 
 	public static function getConnection() {
 		if (self::$connection == null) {
-			self::$connection = mysql_connect('localhost', 'root', '') or die(mysql_error());
+			self::$connection = mysql_connect('localhost', 'root', 'pisces228') or die(mysql_error());
 			mysql_select_db('chaoge') or die(mysql_error());
 			mysql_query('set names utf8') or die(mysql_error());
 		}
