@@ -5,7 +5,7 @@ require_once('func.php');
 ?>
 
 <table class="table table-bordered table-striped table-hover">
-	<caption>员工请假信息</caption>
+	<caption><h3>员工请假信息</h3></caption>
 	<thead>
 		<tr>
 			<th>姓名</th>
@@ -22,11 +22,11 @@ require_once('func.php');
 			{
 		?>
 		<tr>
-			<td><?=$tuple['qj_name']?></td>
-			<td><?=$tuple['qj_manager']?></td>
-			<td><?=$tuple['qj_reason']?></td>
-			<td><?=$tuple['qj_date']?></td>
-			<td><?=$tuple['qj_days']?></td>
+			<td style="width:20%"><?=htmlspecialchars($tuple['qj_name'])?></td>
+			<td style="width:20%"><?=htmlspecialchars($tuple['qj_manager'])?></td>
+			<td style="width:20%"><?=htmlspecialchars($tuple['qj_reason'])?></td>
+			<td style="width:20%"><?=htmlspecialchars($tuple['qj_date'])?></td>
+			<td style="width:20%"><?=htmlspecialchars($tuple['qj_days'])?></td>
 		</tr>
 		<?php
 			}

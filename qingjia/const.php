@@ -1,6 +1,6 @@
 <?php
 
-define('SIZE', 16);
+define('SIZE', 12);
 define('MYSQL_HOST', '192.168.2.19');
 define('MYSQL_USER', 'techsummer');
 define('MYSQL_PASS', 'techsummer');

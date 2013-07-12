@@ -559,13 +559,13 @@
         itemTexts: function (type, page, current) {
             switch (type) {
             case "first":
-                return "&lt;&lt;";
+                return "首页";
             case "prev":
-                return "&lt;";
+                return "上页";
             case "next":
-                return "&gt;";
+                return "下页";
             case "last":
-                return "&gt;&gt;";
+                return "末页";
             case "page":
                 return page;
             }
@@ -574,15 +574,15 @@
 
             switch (type) {
             case "first":
-                return "Go to first page";
+                return "第一页";
             case "prev":
-                return "Go to previous page";
+                return "前一页";
             case "next":
-                return "Go to next page";
+                return "后一页";
             case "last":
-                return "Go to last page";
+                return "最末页";
             case "page":
-                return (page === current) ? "Current page is " + page : "Go to page " + page;
+                return (page === current) ? "当前为第" + page + "页" : "跳到第" + page + "页";
             }
         },
         bootstrapTooltipOptions: {
