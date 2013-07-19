@@ -19,5 +19,7 @@ for line in fin:
         curCluster = strs[0]
         count = 0
         cat.clear()
+for ct in sorted(cat.items(), key=lambda d : d[1], reverse=True):
+    fout.write(curCluster + "\t" + ct[0].strip() + "\t" + str(ct[1]/count) + "\n")
 fout.close()
 fin.close()
