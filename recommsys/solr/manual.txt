@@ -1,0 +1,9 @@
+
+导入csv数据：
+$ curl 'http://localhost:8983/solr/update/csv?stream.file=exampledocs/udid-cate-gps-shanghai-0724.csv&stream.contentType=text/plain;charset=utf-8&separator=;&commit=true'
+
+删除index：
+http://localhost:8983/solr/update/?stream.body=%3Cdelete%3E%3Cquery%3E*:*%3C/query%3E%3C/delete%3E&stream.contentType=text/xml;charset=utf-8&commit=true
+
+附近3公里浏览最多的10个类目：
+http://localhost:8983/solr/select?fl=category&q=*:*&fq=%7B!geofilt%7D&sfield=store&pt=31.247443,121.489879&d=3&facet=true&facet.field=category&facet.limit=10
