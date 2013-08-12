@@ -1,0 +1,37 @@
+{\rtf1\ansi\deff0\deftab480
+
+{\fonttbl
+{\f000 Courier New;}
+{\f001 Courier New;}
+{\f002 Courier New;}
+{\f003 Courier New;}
+{\f004 Courier New;}
+{\f005 Courier New;}
+}
+
+{\colortbl
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green000\blue255;
+\red255\green255\blue255;
+\red128\green128\blue128;
+\red255\green255\blue255;
+\red000\green000\blue128;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+}
+
+\f5242880\fs20\cb11\cf10 \highlight3\cf2\b select\highlight1\cf0\b0  \par
+    \highlight9\cf8 UDID\highlight7\cf6\b ,\highlight1\cf0\b0 \par
+    \highlight9\cf8 bx\highlight7\cf6\b .\highlight9\cf8\b0 dbo\highlight7\cf6\b .\highlight9\cf8\b0 fHiveKV\highlight7\cf6\b (\highlight9\cf8\b0 attr\highlight7\cf6\b ,\highlight1\cf0\b0  \highlight5\cf4 'secondCateName'\highlight7\cf6\b )\highlight1\cf0\b0  \highlight3\cf2\b as\highlight1\cf0\b0  \highlight9\cf8 secondCateName\highlight7\cf6\b ,\highlight1\cf0\b0 \par
+    \highlight9\cf8 bx\highlight7\cf6\b .\highlight9\cf8\b0 dbo\highlight7\cf6\b .\highlight9\cf8\b0 fHiveKV\highlight7\cf6\b (\highlight9\cf8\b0 attr\highlight7\cf6\b ,\highlight1\cf0\b0  \highlight5\cf4 'GPS_geo'\highlight7\cf6\b )\highlight1\cf0\b0  \highlight3\cf2\b as\highlight1\cf0\b0  \highlight9\cf8 GPS_geo\highlight1\cf0 \par
+\highlight3\cf2\b from\highlight1\cf0\b0  \highlight9\cf8 APP\highlight7\cf6\b ..\highlight9\cf8\b0 TRACKDATA_20130720\highlight1\cf0 \par
+\highlight3\cf2\b where\highlight1\cf0\b0  \highlight7\cf6\b (\highlight9\cf8\b0 to_action\highlight7\cf6\b =\highlight5\cf4\b0 'GPS'\highlight1\cf0  \highlight3\cf2\b or\highlight1\cf0\b0  \highlight9\cf8 to_action\highlight7\cf6\b =\highlight5\cf4\b0 '/viewAd'\highlight7\cf6\b )\highlight1\cf0\b0  \highlight3\cf2\b and\highlight1\cf0\b0  \highlight9\cf8 UDID\highlight1\cf0  \highlight3\cf2\b in\highlight1\cf0\b0  \highlight7\cf6\b (\highlight1\cf0\b0 \par
+    \highlight3\cf2\b select\highlight1\cf0\b0  \highlight3\cf2\b distinct\highlight1\cf0\b0  \highlight9\cf8 UDID\highlight1\cf0 \par
+    \highlight3\cf2\b from\highlight1\cf0\b0  \highlight9\cf8 APP\highlight7\cf6\b ..\highlight9\cf8\b0 TRACKDATA_20130720\highlight1\cf0 \par
+    \highlight3\cf2\b where\highlight1\cf0\b0  \highlight9\cf8 to_action\highlight7\cf6\b =\highlight5\cf4\b0 'GPS'\highlight1\cf0  \highlight3\cf2\b and\highlight1\cf0\b0  \highlight9\cf8 attr\highlight1\cf0  \highlight7\cf6\b >\highlight1\cf0\b0  \highlight5\cf4 'GPS_result1GPS_geo(31.140000'\highlight1\cf0  \highlight3\cf2\b and\highlight1\cf0\b0  \highlight9\cf8 attr\highlight1\cf0  \highlight7\cf6\b <\highlight1\cf0\b0  \highlight5\cf4 'GPS_result1GPS_geo(31.345000'\highlight1\cf0 \par
+\highlight7\cf6\b )\highlight1\cf0\b0 \par
+\highlight3\cf2\b order\highlight1\cf0\b0  \highlight3\cf2\b by\highlight1\cf0\b0  \highlight9\cf8 UDID}

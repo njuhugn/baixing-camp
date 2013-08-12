@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">百姓网</string>
+    <string name="action_settings">设置</string>
+    <string name="connect_failed">网络连接错误</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_ad">AdActivity</string>
+    <string name="ad_poster">发布者：</string>
+    <string name="ad_postid">信息编号：</string>
+    <string name="ad_price">价格：</string>
+    <string name="mobile_empty">无联系方式</string>
+    <string name="price_empty">无</string>
+    <string name="data_ready">数据加载成功</string>
+    <string name="anonymous">匿名</string>
+
+</resources>

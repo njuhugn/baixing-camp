@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baixing.quanleimu"
+    android:versionCode="341"
+    android:versionName="3.4.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application
+        android:name="com.baixing.quanleimu.BaixingApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4f7139155270154a7f000051" >
+        </meta-data>
+
+        <!-- Warning ::: do not formator following two line. -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="androidmarket_umeng" />
+        <meta-data
+            android:name="publishTime"
+            android:value="2012-09-29 11:05" />
+
+        <activity
+            android:name="com.baixing.quanleimu.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baixing.quanleimu.SubActivity"
+            android:label="@string/title_activity_sub"
+            android:parentActivityName="com.baixing.quanleimu.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.baixing.quanleimu.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.baixing.quanleimu.ListActivity"
+            android:label="@string/title_activity_list"
+            android:parentActivityName="com.baixing.quanleimu.SubActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.baixing.quanleimu.SubActivity" />
+        </activity>
+        <activity
+            android:name="com.baixing.quanleimu.AdActivity"
+            android:label="@string/title_activity_ad"
+            android:parentActivityName="com.baixing.quanleimu.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.baixing.quanleimu.ListActivity" />
+        </activity>
+    </application>
+
+</manifest>
